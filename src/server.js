@@ -23,14 +23,13 @@ const exportCache = new Map();
 // Middleware
 app.use(cors({
   origin: [
-    "https://vegecastsl-front.vercel.app/", // 
+    "https://vegecastsl-front.vercel.app", // 
     "http://localhost:3000" // for local dev
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
-app.options("/*", cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 

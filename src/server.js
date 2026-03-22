@@ -27,6 +27,7 @@ app.use(cors({
     "http://localhost:3000" // for local dev
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
 app.use(express.json({ limit: "50mb" }));

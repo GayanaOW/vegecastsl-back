@@ -14,7 +14,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Install dependencies
 RUN npm install
-RUN pip install -r requirements1.txt
+RUN pip install -r requirements_new.txt
 
 # Start backend
 CMD ["node", "src/server.js"]

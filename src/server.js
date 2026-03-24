@@ -253,8 +253,8 @@ app.post("/api/admin/login", async (req, res) => {
     username === process.env.ADMIN_USERNAME &&
     password === process.env.ADMIN_PASSWORD;
 
-  console.log("ENV USER:", username);
-  console.log("ENV PASS:", [password]);
+  // console.log("ENV USER:", username);
+  // console.log("ENV PASS:", [password]);
 
   if (!valid) {
     await logAdminAction({

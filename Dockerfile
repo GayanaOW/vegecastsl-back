@@ -35,6 +35,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Install deps
 RUN npm install
-RUN pip install --no-cache-dir -r requirements1.txt
+RUN pip install --no-cache-dir -r requirements_new.txt
 
 CMD ["node", "src/server.js"]

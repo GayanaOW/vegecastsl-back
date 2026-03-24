@@ -335,7 +335,7 @@ app.post("/api/admin/upload/preview",
       const pyScript = path.join(__dirname, "python/preprocess_merge.py");
 
       execFile(
-        "python", // change to "py" if python not found on your Windows
+        "python3", // change to "py" if python not found on your Windows
         [pyScript, vegPath, exPath, exportPath],
         { maxBuffer: 1024 * 1024 * 50 }, // 50MB buffer for stdout
         (err, stdout, stderr) => {
